@@ -1,0 +1,36 @@
+<Window x:Class="TaskBender.QuickLookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:TaskBender"
+        mc:Ignorable="d"
+        Title="TaskBender QuickLook" Height="400" Width="300"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Topmost="True"
+        ShowInTaskbar="False">
+
+    <Border CornerRadius="12" Background="{DynamicResource ApplicationBackgroundBrush}" BorderThickness="1" BorderBrush="{DynamicResource SurfaceStrokeColorDefaultBrush}">
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="Tasks" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,10" Foreground="{DynamicResource TextFillColorPrimaryBrush}"/>
+            
+            <ListView x:Name="TaskList" Grid.Row="1" Background="Transparent" BorderThickness="0">
+                <!-- Placeholder items -->
+                <ListView.Items>
+                    <ListViewItem Content="Task 1"/>
+                    <ListViewItem Content="Task 2"/>
+                    <ListViewItem Content="Task 3"/>
+                </ListView.Items>
+            </ListView>
+        </Grid>
+    </Border>
+</Window>

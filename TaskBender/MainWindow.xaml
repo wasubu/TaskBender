@@ -1,0 +1,27 @@
+﻿<Window x:Class="TaskBender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:TaskBender"
+        mc:Ignorable="d"
+        Title="TaskBender Spotlight" Height="60" Width="600"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Topmost="True"
+        ShowInTaskbar="False">
+
+    <Border CornerRadius="12" Background="White" BorderThickness="1" BorderBrush="Gray">
+        <Grid>
+            <TextBox x:Name="TaskInput"
+                        FontSize="18"
+                        VerticalAlignment="Center"
+                        Margin="10"
+                        BorderThickness="0"
+                        Background="Transparent"/>
+        </Grid>
+    </Border>
+</Window>
